@@ -16,26 +16,20 @@ public class Carta {
     public int IdCarta;
     //bucle creació carta
 
-    public static List<Carta> crearBaralla(int cantitat) {
+    public static List<Carta> crearBaralla() {
         List<Carta> baraja = new ArrayList<>();
         Colors[] colores = Colors.values();
-        int numColores = colores.length;
 
-        int cartasPorColor = cantitat / numColores;
+        int[] valors = {0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9};
 
-        int[] valoresPermitidos = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18};
-        int numValors = valoresPermitidos.length;
+        int id = 1;
 
         for (Colors color : colores) {
-            int index = 0;
-            for (int i = 0; i < cartasPorColor; i++) {
-                int numeroCarta = valoresPermitidos[index];
-                index = (index + 1) % numValors;
-
-                Carta carta = new Carta(i + 1, color, numeroCarta);
-                baraja.add(carta);
+            for (int numero : valors) {
+                baraja.add(new Carta(id++, color, numero));
             }
         }
+
         return baraja;
     }
 
