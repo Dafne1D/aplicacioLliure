@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        List<Carta> _crearBaralla= Carta.crearBaralla(40);
+        List<Carta> _crearBaralla= Carta.crearBaralla();
         Carta.showBaraja(_crearBaralla);
     }
 }
