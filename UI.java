@@ -38,11 +38,11 @@ public class UI {
             %s│       %d │%s
             %s└─────────┘%s""",
             color, RESET,
-            color, Carta.getNumero(), RESET,
+            color, carta.getNumero(), RESET,
             color, RESET,
             color, RESET,
             color, RESET,
-            color, Carta.getNumero(), RESET,
+            color, carta.getNumero(), RESET,
             color, RESET);
 
 
