@@ -13,7 +13,7 @@ public class Carta {
         verd
     }
     private Colors ColorCarta;
-    private static int NumeroCarta;
+    private int NumeroCarta;
 
     //Constructor
     public Carta ( int NumCarta, Colors color){
@@ -21,10 +21,10 @@ public class Carta {
         ColorCarta = color;
     }
 
-
-    public static int getNumero(){
+    public int getNumero(){
         return NumeroCarta;
     }
+
     public Colors getColor(){
         return ColorCarta;
     }
