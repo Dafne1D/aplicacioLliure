@@ -1,6 +1,8 @@
 package UNO;
 
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -11,11 +13,17 @@ public class Main {
         mazo1.barrejar();
         Pilo pilo1 = new Pilo();
         pilo1.getCartes();
-        System.out.println(pilo1);
+        for (int i = 1; i<7; i++){
+            pilo1.getCartes().push(mazo1.agafarCarta());
+        }
+        System.out.println("PILO");
 
+        UI.mostrarCartes(new ArrayList<>(pilo1.getCartes()));
         for (Carta c : mazo1.getCartes()){
             j1.addCarta(c);
         }
+        System.out.println("MAZO");
+
         UI.mostrarCartes(j1.getCartes());
 
     }
