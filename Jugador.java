@@ -16,7 +16,7 @@ public class Jugador {
     public String getNom(String nom) {
         return nom;
     }
-    public ArrayList<Carta> getCarta() {
+    public ArrayList<Carta> getCartes() {
         return cartes;
     }
 
