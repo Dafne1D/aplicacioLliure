@@ -1,10 +1,11 @@
 package UNO;
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.Stack;
 
 public class Mazo {
     //Crear les cartes---------------------------------------------
-    Stack<Carta> cartes = new Stack<>();
+    private Stack<Carta> cartes = new Stack<>();
 
     public Mazo(){
         for (Carta.Colors colors : Carta.Colors.values()){
@@ -12,9 +13,10 @@ public class Mazo {
             for (int i = 1; i <=9; i++){
                 cartes.push(new Carta(i, colors));
             }
-
         }
-
     }
 
+    public ArrayList<Carta> getCartes (){
+        return new ArrayList<>(cartes);
+    }
 }
