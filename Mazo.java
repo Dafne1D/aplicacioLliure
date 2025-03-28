@@ -16,7 +16,6 @@ public class Mazo {
                 cartes.push(new Carta(i, colors));
                 cartes.push(new Carta(i, colors));
             }
-
         }
     }
 
@@ -34,10 +33,10 @@ public class Mazo {
 
     public void reiniciar(Pilo pilo){
         Carta ultimaCarta;
-        ultimaCarta = pilo.getCartes().pop();
+        ultimaCarta = pilo.agafarCarta();
         while (!pilo.getCartes().empty()){
             //agafar les cartes del pilo fent pop mentres getCartes de pilo no estigui vuit i posar-les a mazo.getCartes
-            cartes.push(pilo.getCartes().pop());
+            cartes.push(pilo.agafarCarta());
         }
         pilo.addCarta(ultimaCarta);
     }
