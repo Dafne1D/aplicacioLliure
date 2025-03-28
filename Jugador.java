@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Jugador {
 
 
-    public String nom;
+    private String nom;
     public ArrayList<Carta> cartes; //
 
     public Jugador(String nomJugador){
