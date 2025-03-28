@@ -39,6 +39,6 @@ public class Mazo {
             //agafar les cartes del pilo fent pop mentres getCartes de pilo no estigui vuit i posar-les a mazo.getCartes
             cartes.push(pilo.getCartes().pop());
         }
-        pilo.getCartes().push(ultimaCarta);
+        pilo.addCarta(ultimaCarta);
     }
 }
