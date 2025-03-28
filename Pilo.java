@@ -11,4 +11,9 @@ public class Pilo {
         return(cartes);
     }
 
+
+    public Carta agafarCarta(){
+        return cartes.pop();
+    }
+
 }
