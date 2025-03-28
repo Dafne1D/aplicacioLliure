@@ -11,7 +11,6 @@ public class Pilo {
         return(cartes);
     }
 
-
     public Carta agafarCarta(){
         return cartes.pop();
     }
@@ -19,6 +18,8 @@ public class Pilo {
     public void addCarta(Carta carta){
         cartes.add(carta);
     }
-
+    public Carta consultarCarta(){
+        return cartes.peek();
+    }
 
 }
