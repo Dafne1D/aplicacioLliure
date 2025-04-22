@@ -9,6 +9,7 @@ public class Mazo {
     //Crear les cartes---------------------------------------------
     private Stack<Carta> cartes = new Stack<>();
 
+    //constructor--------------------------------------------------
     public Mazo(){
         for (Carta.Colors colors : Carta.Colors.values()){
             cartes.push(new Carta(0, colors));

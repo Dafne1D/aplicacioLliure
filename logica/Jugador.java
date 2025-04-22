@@ -9,11 +9,11 @@ public class Jugador {
     public ArrayList<Carta> cartes; //
 
     public Jugador(String nomJugador){
-        nomJugador = nom;
+        nom = nomJugador;
         cartes = new ArrayList<>();
     }
 
-    public String getNom(String nom) {
+    public String getNom() {
         return nom;
     }
     public ArrayList<Carta> getCartes() {
@@ -28,5 +28,7 @@ public class Jugador {
         pilo.getCartes().push(carta);
         cartes.remove(carta);
     }
+
+
 
 }
