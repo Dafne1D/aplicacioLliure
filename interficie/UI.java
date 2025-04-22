@@ -1,7 +1,6 @@
 package uno.interficie;
 import java.util.ArrayList;
 import uno.logica.*;
-
 public class UI {
     // ANSI escape codes 
     public static final String RESET = "\u001B[0m"; 
